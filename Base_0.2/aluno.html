@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="shortcut icon" href="_imagens/faviconjrs.ico">
     <link rel="stylesheet" href="_css/estilo2.css"/>
     <meta charset="UTF-8"/>
-    <title>José Rocha Sobrinho</title>
+    <title>Login - Aluno</title>
 	<header id="cabecalho">
 	<img id="logo" src="_imagens/logo.png"/>
         <h1>José Rocha Sobrinho</h1>
         <h2>Educando para a vida</h2>
-	<nav id="menu">	
+	<nav id="menu">
 		<h1>Menu Principal</h1>
 			<ul type="disc">
 				<li><a href="home-page.html">Home</a></li>
@@ -17,20 +18,24 @@
 				<li><a href="enem.html">ENEM</a></li>
 				<li><a href="galeria.html">Galeria</a></li>
 			</ul>
-		</nav>	
+		</nav>
     </header>
 </head>
-<body>	
-<div>	
+<body>
+
+  <!-- Trocar para CPF quando tiver mais avançado, provavelmente Robinho para fazer em PHP a vinculação com o CNPJ para validar os CPF'S -->
+<div>
 		Nome: <input type="tex" name="nome" placeholder="Qual o seu nome?" min="13" max="100"/>
 		</br>Matricula: <input type="number" name="matri" placeholder="Nº da Matrícula"/>
-		</br><input type="radio" name="serie" id="1º ano" value="1" checked/>
+		</br>
+    <input type="radio" name="serie" id="1º ano" value="1" checked/>
 		<label for="1º ano">1º ano</label>
-		<input type="radio" name="serie" id="matri" value="2"/>
+		<input type="radio" name="serie" id="2º ano" value="2"/>
 		<label for="2º ano">2º ano</label>
 		<input type="radio" name="serie" id="3º ano" value="3"/>
 		<label for="3º ano">3º ano</label>
-		</br><a href="home-page.html">Entrar</a>
+
+  </br><a href="home-aluno.html">Entrar</a> <!-- TROCAR PARA <input type="submit" value="Enviar">  QUANDO FOR SE ASSOCIAR AO BANCO DE DADOS -->
 </div>
 </body>
 </html>
